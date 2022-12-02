@@ -2,12 +2,12 @@ package weatherApi;
 
 import weatherApi.weather.Weather;
 
-public class WeatherRepository implements Repository {
+public class WeatherService implements Repository {
 
     Connection connection;
     Formatter formatter;
 
-    public WeatherRepository() {
+    public WeatherService() {
         connection = new Connection();
         formatter = new Formatter();
     }

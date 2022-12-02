@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ConsoleUI implements View {
 
-    Presenter presenter;
+    private Presenter presenter;
     private Scanner scanner;
 
     public ConsoleUI() {
@@ -24,7 +24,7 @@ public class ConsoleUI implements View {
         presenter.onClick(city);
     }
 
-    public String scan() {
+    private String scan() {
         System.out.println("Введите город");
         return scanner.nextLine();
     }
