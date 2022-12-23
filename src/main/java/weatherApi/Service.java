@@ -1,5 +1,5 @@
 package weatherApi;
 
-public interface Repository {
+public interface Service {
     String get(String city);
 }

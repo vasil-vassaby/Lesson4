@@ -1,20 +1,20 @@
 package presenter;
 
 import ui.View;
-import weatherApi.Repository;
+import weatherApi.Service;
 
 public class Presenter {
     private View view;
-    private Repository repository;
+    private Service service;
 
-    public Presenter(View view, Repository repository) {
+    public Presenter(View view, Service service) {
         this.view = view;
-        this.repository = repository;
+        this.service = service;
         view.setPresenter(this);
     }
 
     public void onClick(String city){
-        String answer = repository.get(city);
+        String answer = service.get(city);
         view.print(answer);
     }
 }

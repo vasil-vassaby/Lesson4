@@ -9,18 +9,16 @@ public class Connection {
     //Зарегистрируйтесь на сайте weatherstack.com и получите свой ключ при использовании заменить!
     private static final String apiKey = "eceae5bae9142cc79ef4bb4199703b7f";
 
-    public String getInfo(String city) {
+    public String getInfo(String city) throws Exception{
         StringBuilder stringBuilder = new StringBuilder();
-        try {
-            URL url = new URL("http://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + city);
-            URLConnection connection = url.openConnection();
-            Scanner scanner = new Scanner(connection.getInputStream());
-            while (scanner.hasNext()) {
-                stringBuilder.append(scanner.nextLine());
-            }
-        } catch (Exception e){
-            e.printStackTrace();
+
+        URL url = new URL("http://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + city);
+        URLConnection connection = url.openConnection();
+        Scanner scanner = new Scanner(connection.getInputStream());
+        while (scanner.hasNext()) {
+            stringBuilder.append(scanner.nextLine());
         }
+
 //        System.out.println("от сервера пришел ответ: " + stringBuilder);
         return stringBuilder.toString();
     }

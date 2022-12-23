@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3052892-d1fe-4b0e-8b20-54aec27fce1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/DesktopUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weatherApi/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/weatherApi/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weatherApi/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/weatherApi/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weatherApi/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/weatherApi/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presenter/Presenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presenter/Presenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/weatherApi/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/weatherApi/WeatherRepository.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +110,19 @@
       <updated>1669915019046</updated>
       <workItem from="1669915023173" duration="6986000" />
       <workItem from="1669928871845" duration="4322000" />
-      <workItem from="1669965174314" duration="5047000" />
+      <workItem from="1669965174314" duration="5293000" />
+      <workItem from="1671817360105" duration="18000" />
+      <workItem from="1671821052031" duration="929000" />
+      <workItem from="1671823887016" duration="2370000" />
     </task>
+    <task id="LOCAL-00001" summary="Изменил название класса на WeatherService, более логично, так как класс представляет набор методов. Добавил private в ConcoleUI для поля presenter и метода">
+      <created>1669972229935</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669972229935</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,10 +133,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Изменил название класса на WeatherService, более логично, так как класс представляет набор методов. Добавил private в ConcoleUI для поля presenter и метода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменил название класса на WeatherService, более логично, так как класс представляет набор методов. Добавил private в ConcoleUI для поля presenter и метода" />
   </component>
 </project>
